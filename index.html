@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portuguese Flashcard Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Learn Portuguese</h1>
+        <p>Practice with flashcards and test your knowledge!</p>
+    </header>
+    <main>
+        <div id="flashcard">
+            <div class="front">
+                <p id="front-text">Bom dia!</p>
+                <span>Tap to see the meaning</span>
+            </div>
+            <div class="back">
+                <p id="back-text">Good morning!</p>
+                <span>Tap to return</span>
+            </div>
+        </div>
+        <div id="controls">
+            <button id="prev">Previous</button>
+            <button id="quiz">Quiz Me</button>
+            <button id="next">Next</button>
+        </div>
+        <div id="quiz-section" class="hidden">
+            <p id="quiz-question">What does "Bom dia" mean?</p>
+            <input type="text" id="quiz-answer" placeholder="Your answer">
+            <button id="submit-answer">Submit</button>
+            <p id="quiz-feedback"></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
